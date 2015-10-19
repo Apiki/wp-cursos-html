@@ -1,0 +1,257 @@
+// color
+$COM_COLOR_TITLE_SECTION 	: $colorPrimary;
+$COM_COLOR_LINK 			: $colorSecondary;
+$COM_COLOR_NAME 			: $colorTitle;
+$COM_COLOR_BORDER_INPUT 	: $colorSecondary;
+$COM_COLOR_TEXT 			: $colorText;
+$COM_COLOR_TEXT_BUTTON		: #FFF;
+
+
+// background
+$COM_BG_BUTTON 				: $colorSecondary;
+
+
+// font
+$COM_FONT_TEXT 				: $fontPrimary;
+$COM_FONT_SIZE_TITLE_SECTION: 22px;
+$COM_FONT_SIZE_NAME 		: 16px;
+$COM_FONT_SIZE_TEXT 		: 14px;
+
+$COM_FONT_SIZE_INPUT 		: 12px;
+
+
+// positions
+$COM_MARGIN_THUMBNAIL_LEFT 	: 60px;
+$COM_MARGIN_CONTENT_TEXT 	: $COM_MARGIN_THUMBNAIL_LEFT - 44px;
+
+
+// transition
+$COM_PERC_COLOR 			: 5%;
+
+
+// COMMENT BASIC
+.comment-basic {
+
+	ul, ol { list-style: none; }
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	// title
+	.comments-title,
+	.comment-reply-title {
+		color: $COM_COLOR_TITLE_SECTION;
+		font-size: em( $COM_FONT_SIZE_TITLE_SECTION );
+		margin-bottom: 20px;
+	}
+
+	.comment-body {
+		margin-bottom: 20px;
+		position: relative;
+	}
+
+
+	// box - image perfil, name, date
+	.comment-meta {
+		float: left;
+		margin-right: $COM_MARGIN_CONTENT_TEXT;
+	}
+
+	.says {	display: none; }
+
+	.fn,
+	.comment-metadata {
+		left: $COM_MARGIN_THUMBNAIL_LEFT;
+		position: absolute;
+		white-space: nowrap;
+		z-index: 5;
+	}
+
+	.fn {
+		color: $COM_COLOR_NAME;
+		font-size: em( $COM_FONT_SIZE_NAME );
+		font-weight: normal;
+		top: 0px;
+
+		a:hover { color: darken( $COM_COLOR_NAME, $COM_PERC_COLOR ); }
+	}
+
+	.comment-metadata {
+		color: rgba( $COM_COLOR_TEXT, .5 );
+		font-size: em( 12px );
+		text-transform: uppercase;
+		top: 20px;
+
+		a:hover { color: darken( $COM_COLOR_TEXT, $COM_PERC_COLOR ); }
+	}
+
+	.comment-edit-link {
+		color: darken( $COM_COLOR_TEXT, 2% );
+		font-weight: bold;
+	}
+
+
+	// box - content
+	.comment-content {
+		color: $COM_COLOR_TEXT;
+		font-size: em( $COM_FONT_SIZE_TEXT );
+		line-height: 1.4;
+		overflow: hidden;
+		padding: 45px 10px 10px;
+		position: relative;
+
+		p {
+			margin-top: 20px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+
+	.reply {
+		color: $COM_COLOR_LINK	;
+		padding-left: $COM_MARGIN_THUMBNAIL_LEFT;
+
+		a:hover { color: darken( $COM_COLOR_LINK, $COM_PERC_COLOR ); }
+	}
+
+	.children {
+		padding-left: 10%;
+	}
+
+	.comment-awaiting-moderation {
+		bottom: 100%;
+		position: absolute;
+		left: $COM_MARGIN_THUMBNAIL_LEFT;
+		white-space: nowrap;
+		color: #999;
+		font-size: em( 10px );
+		text-transform: uppercase;
+	}
+
+	.comment-reply-title > a {
+		color: $COM_COLOR_TEXT;
+	}
+
+
+	// respond
+	.comment-respond {
+
+		input,
+		textarea {
+			// border: 1px solid #EEE;
+			color: $COM_COLOR_TEXT;
+			font-family: $COM_FONT_TEXT;
+			font-size: $COM_FONT_SIZE_INPUT;
+			overflow: hidden;
+			padding: 8px;
+			resize: none;
+			width: 100%;
+
+			&:focus {
+				// border-color: $COM_COLOR_BORDER_INPUT;
+			}
+		}
+
+		.comment-form {
+			font-size: em( 14px );
+			color: $COM_COLOR_TEXT;
+
+			p {
+				margin-top: 10px;
+
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+
+			#submit {
+				background: $COM_BG_BUTTON;
+				border: none;
+				color: $COM_COLOR_TEXT_BUTTON;
+				cursor: pointer;
+				text-transform: uppercase;
+				width: 200px;
+
+				&:hover { background: darken( $COM_BG_BUTTON, $COM_PERC_COLOR ); }
+			}
+		}
+	}
+}
+
+/* --------------------------------
+	CLASSIC
+-------------------------------- */
+
+// color
+$COM_COLOR_COMMENT_TXT		: $colorText;
+
+// background
+$COM_BG_BOX_CONTENT 		: #fff;
+
+
+// positions
+$COM_MARGIN_CONTENT_ARROW 	: $COM_MARGIN_THUMBNAIL_LEFT - 25px;
+$COM_BDR_RADIUS				: 0;
+
+
+// CLASSIC
+.comment-basic.classic {
+
+	.comment-meta:before {
+		border-color: $COM_BG_BOX_CONTENT transparent transparent transparent;
+		border-style: solid;
+		border-width: 20px;
+		content: '';
+		left: $COM_MARGIN_CONTENT_ARROW;
+		position: absolute;
+		top: 0;
+	}
+
+
+	.fn {
+		top: 10px;
+	}
+
+	.comment-metadata {
+		top: 30px;
+	}
+
+
+	.comment-content {
+		background: $COM_BG_BOX_CONTENT;
+		border-radius: $COM_BDR_RADIUS;
+		padding: 60px 10px 10px;
+	}
+
+	.comment-awaiting-moderation {
+		left: auto;
+		right: 0;
+	}
+
+	.reply {
+		color: $COM_COLOR_LINK;
+		margin-top: 5px;
+		text-align: right;
+	}
+
+	.comment-form {
+		color: $COM_COLOR_COMMENT_TXT;
+	}
+
+
+	// respond
+	.comment-respond {
+
+		input,
+		textarea {
+			border-radius: $COM_BDR_RADIUS;
+		}
+	}
+
+	.comment-reply-title {
+		@extend .title-large;
+	}
+}

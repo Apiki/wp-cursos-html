@@ -1,0 +1,57 @@
+.slider-featured {
+	background: url( "assets/images/wallpaper.png" ) no-repeat top center;
+	background-size: cover;
+	height: 420px;
+	margin-bottom: $colMargin;
+	line-height: 1.4;
+	text-align: center;
+
+	.bx-wrapper,
+	.bx-viewport,
+	ul,
+	li {
+		height: inherit;
+	}
+
+	.bx-controls-direction {
+		display: none;
+	}
+}
+
+// ----------------------------------------------------------------------------
+// Slider Featured Box
+// ----------------------------------------------------------------------------
+.slider-featured-box {
+	color: #fff;
+	display: inline-block;
+	font-size: em( 18px );
+	font-weight: bold;
+	padding: 0 15px;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY( -50% );
+			transform: translateY( -50% );
+
+	.thumbnail {
+		margin: 0 auto 15px;
+		width: 120px;
+	}
+
+	.title {
+		margin-bottom: 5px;
+		font-size: em( 30px, 18px  );
+	}
+
+	.excerpt {
+		margin-bottom: 0;
+		opacity: .8;
+	}
+
+	@media ( min-width: $tablet ) {
+		font-size: em( 25px );
+
+		.thumbnail {
+			width: 160px;
+		}
+	}
+}

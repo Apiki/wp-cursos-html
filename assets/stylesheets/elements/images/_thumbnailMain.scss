@@ -1,0 +1,8 @@
+.thumbnail-main {
+	background: darken( $colorDisabled, 5% );
+
+	img {
+		@extend %img;
+		margin: 0 auto;
+	}
+}

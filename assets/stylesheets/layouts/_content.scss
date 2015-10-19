@@ -1,0 +1,18 @@
+#content {
+
+    @media ( min-width: $mobile ) {
+        @include col(7);
+        border-right: 2px solid $colorDetail;
+        float: left;
+        padding-right: 20px;        
+    }
+
+    @media ( min-width: $tablet ) {
+        @include col(8);
+        padding-right: $colMargin;
+    }
+
+    .list-news {
+        margin-bottom: $colMargin;
+    }
+}

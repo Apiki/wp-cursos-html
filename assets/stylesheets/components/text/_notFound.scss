@@ -1,0 +1,25 @@
+.not-found {
+	color: $colorText;
+	font-size: 20px;
+	min-height: 500px;
+	padding-top: 30px;
+	text-align: center;
+
+	div {
+		color: $colorDetail;
+		font-size: em( 100px, 20px );
+		font-weight: bold;
+	}
+
+	p {
+		border-top: 2px solid $colorDetail;
+		display: inline-block;
+		margin-top: 30px;
+		padding: 30px;
+		width: 80%;
+	}
+
+	@media ( min-width: $mobile ) {
+		font-size: 40px;
+	}
+}

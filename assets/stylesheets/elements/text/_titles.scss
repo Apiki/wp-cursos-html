@@ -1,0 +1,43 @@
+.title-section {
+	background: #fff;
+	border-radius: 30px;
+	border: 1px solid $colorDetail;
+	color: $colorSecondary;
+	display: inline-block;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding: 8px 25px;
+	text-transform: uppercase;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+.title-large {
+	border-bottom: 2px solid $colorDetail;
+	color: $colorTitle;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+
+.title-main {
+	background: darken( $colorSecondary, 5% );
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+	height: 55px;
+
+	.container,
+	.container * {
+		height: inherit;
+	}
+
+	.container * {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}

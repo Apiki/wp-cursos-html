@@ -1,0 +1,33 @@
+#footer {
+    background: $colorTertiary;
+    margin-top: $colMargin;
+    padding-top: $colMargin;
+
+    .widget,
+    .widget-title {
+    	color: #fff;
+    }
+
+    .social,
+    .copyright {
+       padding: 15px 0;
+    }
+
+    .social {
+        border-top: 1px solid lighten( $colorTertiary, 1% );
+        color: lighten( $colorTertiary, 30% );
+        text-align: center;
+
+        li a:before {
+            font-size: 30px;
+        }
+    }
+}
+
+.copyright {
+    border-top: 1px solid #565957;
+    color: rgba( #fff, .5 );
+    display: block;
+    font-size: 11px;
+	text-align: center;	
+}

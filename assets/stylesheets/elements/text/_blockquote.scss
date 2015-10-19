@@ -1,0 +1,13 @@
+blockquote {
+	border-left: 5px solid lighten( $colorDetail, 3% );
+	clear: both;
+	color: $colorText;
+	font-style: italic;
+	line-height: 1.4;
+	margin: 30px 30px 30px 0;
+	padding: 10px 0 10px 30px;
+
+	p:last-child {
+		margin: 0;
+	}
+}

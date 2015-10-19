@@ -1,0 +1,39 @@
+.search-form {
+	position: relative;
+
+	input[type="text"],
+	input[type="search"] {
+		width: 100%;
+		padding-right: 50px;
+	}
+
+	button {
+		background: none;
+		border: none;
+		color: $colorSecondary;
+		cursor: pointer;
+		font-size: 20px;
+		padding: 0;
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		-webkit-transform: translateY( -50% );
+				transform: translateY( -50% );
+	}
+}
+
+.search-form-text {
+	color: $colorText;
+	margin-top: 15px;
+
+	strong {
+		color: $colorSecondary;
+		font-weight: bold;
+	}
+}
+
+.content-search {
+	border-bottom: 2px solid $colorDetail;
+	margin-bottom: $colMargin;
+	padding-bottom: $colMargin - 10px;
+}

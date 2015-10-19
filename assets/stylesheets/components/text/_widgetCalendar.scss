@@ -1,0 +1,22 @@
+#wp-calendar {
+	width: 100%;
+
+	caption {
+		background: rgba( #000, .1 );
+		margin-bottom: 15px;
+		padding: 10px 15px;
+	}
+
+	th,
+	td {	
+		height: 25px;
+		text-align: center;
+	}
+
+	#today {
+		background: $colorSecondary;
+		color: #fff;
+		font-weight: bold;
+		cursor: pointer;
+	}
+}

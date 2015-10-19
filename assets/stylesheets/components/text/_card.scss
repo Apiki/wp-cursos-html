@@ -1,0 +1,62 @@
+
+.card {
+	background: #fff;
+	border: 1px solid $colorDetail;
+	border-radius: 3px;
+	line-height: 1.3;
+	padding: 15px;
+
+	img {
+		@extend %img;
+		border-radius: 3px 3px 0 0;
+		width: 100%;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.thumbnail {
+		margin: -16px -16px 15px;
+	}
+
+	.excerpt {
+		color: $colorText;
+		font-size: 13px;
+	}
+
+	.excerpt,
+	.card-tags {
+		margin-top: 15px;	
+	}
+
+	// -- Tags
+	.card-tags {
+		margin: 10px -5px -5px;
+	}
+
+	.tag {
+		margin: 5px;
+	}
+}
+
+.card-title {
+	color: $colorTitle;
+	font-size: 15px;
+	font-weight: bold;
+	position: relative;
+
+	&:before {
+		background: $colorSecondary;
+		bottom: 0;
+		content: "";
+		left: -15px;
+		position: absolute;
+		top: 0;
+		width: 5px;
+	}
+}
+
+@include list( card, 4, $container, 270px );
+@include list( card-content, 3, $content, 225px );

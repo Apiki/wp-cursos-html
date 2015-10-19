@@ -1,0 +1,23 @@
+.widget {
+	color: $colorText;
+	line-height: 1.2;
+
+	img {
+		@extend %img;
+		margin-bottom: 10px;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+.widget-title {
+	border-bottom: 1px solid $colorDetail;
+	color: $colorTitle;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}

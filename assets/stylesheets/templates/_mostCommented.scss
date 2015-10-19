@@ -1,0 +1,40 @@
+.most-commented {
+	background: rgba( $colorDetail, .5% );	
+	border-top: 3px solid $colorSecondary;
+	padding: 20px $colMargin $colMargin;
+
+	.thumbnail,
+	img {
+		margin: 0;
+	}
+
+	img {
+		border-radius: 3px 0 0 3px;
+	}
+
+	.card {
+		display: table;
+		margin-top: $colMargin;
+		padding: 0;
+		width: 100%;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		.thumbnail,
+		.card-title {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.thumbnail {
+			padding-right: 10px;
+			width: 130px;
+		}
+
+		.excerpt {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,145 @@
+.the-content {
+	color: $colorText;
+	font-size: 16px;	
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: bold;
+		line-height: 1;
+		margin-bottom: 10px;
+	}
+
+	h1 { font-size: em( 28px ); }
+	h2 { font-size: em( 28px - 4 ); }
+	h3 { font-size: em( 28px - 6 ); }
+	h4 { font-size: em( 28px - 8 ); }
+	h5 { font-size: em( 28px - 10 ); }
+	h6 { font-size: em( 28px - 15 ); }
+
+	p {
+		line-height: 1.5;
+		margin-bottom: 20px;
+	}
+
+	a {
+		color: $colorPrimary;
+		text-decoration: underline;
+	}
+
+	mark {
+		color: inherit;
+		background: $colorSecondary;
+	}
+
+	img {
+		@extend %img;		
+	}
+
+	ul,
+	ol {
+		line-height: 1.4;
+		margin: 30px 0;
+		padding-left: 15px;
+	}
+
+	ul {
+		list-style: disc;
+	}
+
+	ol {
+		list-style: decimal;
+	}
+
+	.gallery {
+		float: none;
+	}
+}
+
+// Table
+// ----------------------------------------------------------------------------
+
+.the-content table {
+	display: block;
+	margin: 30px 0;
+	overflow-x: auto;
+	width: 100%;
+
+	thead tr {
+		border-width: 2px;
+	}
+
+	td,
+	th {
+		padding: 15px 20px;
+	}
+
+	th {
+		font-weight: bold;
+	}
+
+	tr {
+		border-bottom: 1px solid $colorDetail;
+	}
+}
+
+// ----------------------------------------------------------------------------
+// Thumbnail
+// ----------------------------------------------------------------------------
+.the-content {
+
+	.aligncenter,
+	.alignnone,
+	.alignleft,
+	.alignright {
+		display: block;
+		margin: 0 auto 20px;
+		max-width: 100%;
+
+		a {
+			display: block;
+		}
+	}
+
+	.aligncenter,
+	.alignnone {
+		clear: both;
+	}
+
+	@media ( min-width: $desktop ) {
+
+		.alignleft {
+			float: left;
+			margin: 0 20px 20px 0;
+		}
+
+		.alignright {
+			float: right;
+			margin: 0 0 20px 20px;
+		}
+	}
+}
+
+// ----------------------------------------------------------------------------
+// Caption
+// ----------------------------------------------------------------------------
+.wp-caption {
+	position: relative;
+	max-width: 100%;
+
+	.wp-caption-text {
+		background: $colorDisabled;
+		bottom: 0;
+		box-shadow: 2px -2px 0 0 rgba( #000, .1 );
+		display: inline-block;
+		font-size: 12px;
+		left: 0;
+		margin: 0;
+		max-width: 95%;
+		padding: 10px;
+		position: absolute;
+	}
+}

@@ -1,0 +1,99 @@
+// BASE
+// BASE
+// Configurações basicas do projeto
+// ----------------------------------------------------------------------------
+
+@import "base/variables";
+@import "base/functions";
+@import "base/mixins";
+@import "base/reset";
+@import "base/fonts";
+@import "base/helpers";
+
+
+// ELEMENTS
+// Classes individuais e elementos pequenos e reutilizáveis
+// ----------------------------------------------------------------------------
+
+// -- Images
+@import "elements/images/icons";
+@import "elements/images/thumbnailMain";
+
+// -- Buttons
+@import "elements/buttons/btn";
+@import "elements/buttons/btnGroup";
+@import "elements/buttons/btnSecondary";
+@import "elements/buttons/btnShare";
+
+// -- Forms
+@import "elements/forms/input";
+@import "elements/forms/label";
+@import "elements/forms/select";
+@import "elements/forms/submit";
+@import "elements/forms/textarea";
+
+// -- Text
+@import "elements/text/blockquote";
+@import "elements/text/loading";
+@import "elements/text/messages";
+@import "elements/text/tooltip";
+@import "elements/text/tag";
+@import "elements/text/titles";
+
+
+// COMPONENTS
+// Criar um elemento 'pai' para modificar os elements
+// ----------------------------------------------------------------------------
+
+// -- Js
+@import "components/js/slider";
+@import "components/js/chosen";
+@import "components/js/icheck";
+@import "components/js/lightbox";
+@import "components/js/sliderFeatured";
+
+// -- Navigation
+@import "components/navigation/breadcrumb";
+@import "components/navigation/navigation";
+@import "components/navigation/pagination";
+@import "components/navigation/navigationMain";
+@import "components/navigation/social";
+
+// -- Text
+@import "components/text/theContent";
+@import "components/text/newsItem";
+@import "components/text/card";
+@import "components/text/news";
+@import "components/text/widget";
+@import "components/text/widget";
+@import "components/text/widgetCalendar";
+@import "components/text/notFound";
+@import "components/text/searchForm";
+@import "components/text/searchForm";
+@import "components/text/headerSearch";
+@import "components/text/comments";
+
+
+// TEMPLATES
+// Estruturas maiores do projeto, que podem modificar element e components
+// ----------------------------------------------------------------------------
+@import "templates/list";
+@import "templates/mostCommented";
+
+
+// LAYOUTS
+// Sistemas de grids e alinhamentos de templates
+// ----------------------------------------------------------------------------
+@import "layouts/grid";
+@import "layouts/container";
+@import "layouts/content";
+@import "layouts/sidebar";
+@import "layouts/header";
+@import "layouts/footer";
+
+
+// PAGES
+// Estiliza páginas individualmente
+// ----------------------------------------------------------------------------
+// @import "pages/home";
+// @import "pages/contact";

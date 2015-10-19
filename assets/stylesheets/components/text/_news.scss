@@ -1,0 +1,68 @@
+.news {
+	@extend %clearFix;
+	color: $colorText;
+	display: block;
+	line-height: 1.2;
+	text-decoration: none;
+
+	img {
+		@extend %img;
+		border-radius: 100%;
+	}
+
+	p {
+		display: none;
+	}
+
+	.thumbnail,
+	.excerpt {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.thumbnail {
+		padding-right: 15px;
+		max-width: 80px;
+	}
+
+	.title {
+		color: $colorTitle;
+		font-weight: bold;
+	}
+}
+
+.list-news {
+	@extend %clearFix;
+
+	.news {
+		margin-top: 15px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+
+@media ( min-width: $tablet ) {
+
+	.news {
+
+		p {
+			display: block;
+			margin-top: 5px;
+		}
+
+		.title {
+			font-size: 20px;
+		}
+
+		.thumbnail {
+			max-width: 150px;
+		}
+
+		.list-news & {
+			margin-top: 30px;
+		}
+	}
+}

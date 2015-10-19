@@ -1,0 +1,21 @@
+#sidebar {
+
+    @media ( min-width: $mobile ) {
+        @include col(5);
+        float: left;
+        margin-left: perc( $colMargin, $container );
+    }
+
+    @media ( min-width: $tablet ) {
+        @include col(4);
+    }
+
+	> * {
+		margin-top: 30px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}    
+}
+
